@@ -1,0 +1,16 @@
+{
+  "name": "CommentSistem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "http-server -p 5566",
+    "build": "yarn tsc"
+  },
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

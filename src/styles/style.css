@@ -1,0 +1,14 @@
+@import './variables.css';
+@import './libs/normalize.css';
+@import './components/all.css';
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: calc(100vw - 100px);
+    max-width: 1400px;
+    height: 100%;
+    margin: 50px auto;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script defer src="./index.js"></script>
+    <title>Comments system</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__container">
+          <div class="comments">
+            <h3>Комментарии <span class="comments__count">(80)</span></h3>
+          </div>
+          <div class="filter">
+            <span class="filter__value">По количеству оценок</span>
+            <div class="filter__triangle">
+              <svg
+                width="18"
+                height="15"
+                viewBox="0 0 18 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M9 0L0.339746 15L17.6603 15L9 0Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <div class="filter__dropdown">
+              <ul>
+                <li>По дате</li>
+                <li>
+                  <span class="filter__check">
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        opacity="0.4"
+                        width="15"
+                        height="15"
+                        fill="url(#pattern0)"
+                      />
+                      <defs>
+                        <pattern
+                          id="pattern0"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                          height="1"
+                        >
+                          <use
+                            xlink:href="#image0_12_458"
+                            transform="scale(0.0104167)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_12_458"
+                          width="96"
+                          height="96"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAEDUlEQVR4nO3cTYxdYxgH8N8dZkopIZSEhI4uGgQhQYQm2EhEUtUQ0opgR8JGRSTS2Fg0EQ0bIj4SVNiKkhKxUIKFb9IuRLS+PwbVajrmWhw3uW3vzNyP9z3nnjvPL3mSWd3zf58zc889z3nvEEIIIYQQQgghhBBCCCGEEEIIYVQdVnWAmmlgDW7FcnyK6UoTLSCH40U02+orTFYZaqFo4EkHNr9VP+CC6qItDA/p3PxW/YWrKks34u4wd/NbtQ83VZRxZN2If3V3ApqYwYZKko6gK/GP7pvfXpswVn7k0XERduuv+a16AeNlBx8FK/CzwZrfqo0lZ6+9U/GNNM1vYkrc7HbtWHwsXfObimtInIAuLMY2aZvfxOYyF1FX43hF+uZvx4klrqOWGnhK+ubvwrIS11FbG6Vv/h84r8xF1NV66Zu/FyvLXERdrVWMDVI2fxrXlbmIuroa+6Vt/gxuL3MRdZVixNCp7itzEQdrKC46Z/7/87A6C79K3/xNZS7iYKfjk7Yw2wznx6/TsFP65m9W4dTzGHzeIdQvuLSqUB2cgC+lb/6bWFTiOg4wZu67x724oapwbRbjHemb/wGOLnEdh+jmBqbqp0Pj2NIh16C1AyeVuI5DrO0Qaq56XLGlo0wNPNNjzm5ql+K6V5nz8bfeg2/BkhJzPtxHxvlqSsUjhpPxrf4X8BFOKSHn/QNknK324LISss/qCLxr8IV8rbhfyOVmeUYMqzNm7soT0i3oN1yeIeMqRbNSNn9GsQ+0Uiv0tjemm9qHdQkzrlR89E391lPpiKFllfQLa/12PZAg3zmKC2TqfI8kyJbEpPTvq+31tP73zyzDdxkyPW/INlY9KN8JaGKrYldCL5YqnrumzvIaJnrMUoq7pL8WtNdniqFZN5bgwwwZ3lfxiGE+q/V3I9ZtfW/+vfYTeD3DsXco/qqG3oWKLyXkOgm7cc0sxx7DSxmOWfmIoVfLdB5Fp6pp3NnhuJsyHGsK5w7ekvItwavynYSmA7d5b8jw+pWPGAY1Ls/GpvZ6GXdneN39Zn+rq53cn5BS1wxuy9KJCq1R/ElX3dxuan2mHlTuYvyo+gbPVY9lW/2QmJTnIXiKGroRQy7H4S3VN7y93jCkI4ZcJvCs6hvfVIMRQy4N3CvvNHW+2q4mI4acrpfngcl8tVP3A76Rdwl+Ul7zaztiyOkMxb94yd38PYZre+RQOR5vy9f8aVxb2mpqahGek775Q7GLoS4a0k847yl1BSPiFsU2lUGb/2jZwUfJFfhd/81fMCOGnJbrb5fDVgtsxJDTUrynt+YfVUnSEXakYmQ81/hiv+JxZfzmZ3S24kR8odgK86fiC4EbFd94DCGEEEIIIYQQQgghhBBCCCEMvf8Ao3Yrj0/AcFsAAAAASUVORK5CYII="
+                        />
+                      </defs>
+                    </svg>
+                  </span>
+                  По количеству оценок
+                </li>
+                <li>По актуальности</li>
+                <li>По количеству ответов</li>
+              </ul>
+            </div>
+          </div>
+          <div class="favorites">
+            <span class="favorites__item">Избранное</span>
+            <div class="favorites__heart">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <div class="write-message">
+          <div class="user">
+            <img src="./src/assets/person.jpg" alt="User image" />
+          </div>
+          <div class="write-message__message-form message-form">
+            <div class="message-form__header">
+              <div class="message-form__name">Максим Авдеенко</div>
+              <div class="message-form__text-count">
+                Макс. <span class="message-form__num">1000</span> символов
+              </div>
+            </div>
+            <div class="message-form__form">
+              <form>
+                <input type="text" placeholder="Введите текст" />
+                <button>Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <div class="user">
+            <img src="./src/assets/person2.jpg" alt="User image" />
+          </div>
+
+          <div class="message__container">
+            <div class="message__header">
+              <div class="message__name">Алексей_1994b</div>
+              <div class="time">15.01 13:55</div>
+            </div>
+            <div class="message__body">
+              <p>
+                Самое обидное когда сценарий по сути есть - в виде книг, где нет
+                сюжетных дыр, всё логично, стройное повествование и достаточно
+                взять и экранизировать оригинал как это было в первых фильмах с
+                минимальным количеством отсебятины и зритель с восторгом примет
+                любой такой фильм и сериал, однако вместо этого 'Кольца власти'
+                просто позаимствовали имена из оригинала, куски истории, мало
+                связанные между собой и выдали очередной среднячковый сериал на
+                один раз в лучшем случае.
+              </p>
+            </div>
+            <div class="message__footer">
+              <div class="message__reply">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M205 34.8c11.5 5.1 19 16.6 19 29.2v64H336c97.2 0 176 78.8 176 176c0 113.3-81.5 163.9-100.2 174.1c-2.5 1.4-5.3 1.9-8.1 1.9c-10.9 0-19.7-8.9-19.7-19.7c0-7.5 4.3-14.4 9.8-19.5c9.4-8.8 22.2-26.4 22.2-56.7c0-53-43-96-96-96H224v64c0 12.6-7.4 24.1-19 29.2s-25 3-34.4-5.4l-160-144C3.9 225.7 0 217.1 0 208s3.9-17.7 10.6-23.8l160-144c9.4-8.5 22.9-10.6 34.4-5.4z"/></svg>
+                Ответить
+              </div>
+              <div class="message__inChosen">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                В избранном
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
